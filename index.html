@@ -4,35 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ceará Utilidades</title>
+  <meta name="description" content="Ceará Utilidades - Tudo o que você precisa em um só lugar." />
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-    body{background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh}
-    .page{width:100%;max-width:430px;min-height:100vh;background:linear-gradient(180deg,#ffc400 0%,#ffbf00 75%,#ff3b18 100%);padding:32px 22px 0;color:#222;text-align:center}
-    .logo{width:135px;height:135px;border:4px solid rgba(255,255,255,.9);border-radius:50%;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);box-shadow:0 0 22px rgba(255,255,255,.45)}
-    .logo img{width:105px;max-height:105px;object-fit:contain}
-    h1{font-size:27px;color:#ec211a;margin-bottom:12px;font-weight:800}
-    .slogan{font-size:15px;font-weight:600;color:#50452a;margin-bottom:16px}
-    .city{font-size:13px;color:#806b41;margin-bottom:28px;font-weight:700}
-    .btn{display:block;text-decoration:none;background:linear-gradient(135deg,#f01818,#ff4161);color:white;border-radius:9px;padding:18px 20px;margin:0 0 18px;text-align:left;box-shadow:0 10px 20px rgba(0,0,0,.15)}
-    .btn strong{display:block;font-size:16px;margin-bottom:4px}.btn span{font-size:13px;font-weight:700;opacity:.9}
-    .card{background:white;border-radius:9px;padding:22px 18px;margin-bottom:18px;text-align:left;box-shadow:0 10px 20px rgba(0,0,0,.16)}
-    .card h2{font-size:16px;margin-bottom:8px;color:#252525}.card p{font-size:13px;color:#666;line-height:1.45}.center{text-align:center}.phone{color:#c73636;font-size:17px!important;font-weight:800;margin-top:9px}.email{color:#c73636;font-weight:800;word-break:break-word}.icons{display:flex;gap:18px;justify-content:center;margin:18px 0 12px}.icon{width:43px;height:43px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f74040,#ff7590);color:white;font-weight:800;font-size:20px;box-shadow:0 7px 13px rgba(236,33,26,.28)}
-    footer{margin:45px -22px 0;padding:24px 10px;background:linear-gradient(90deg,#ff1d13,#ffba00);color:white;font-size:13px;font-weight:700}footer span{display:block;font-size:11px;margin-top:8px;opacity:.9}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      min-height:100vh;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#050505;
+      display:flex;
+      justify-content:center;
+      color:#202020;
+    }
+    .page{
+      width:100%;
+      max-width:520px;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at top,#ffd429 0%,#ffc400 42%,#ffbd00 100%);
+      box-shadow:0 0 45px rgba(0,0,0,.55);
+      overflow:hidden;
+    }
+    .content{padding:32px 24px 0;text-align:center}
+    .logo-box{
+      width:150px;height:150px;margin:0 auto 24px;border-radius:50%;
+      border:4px solid rgba(255,255,255,.95);
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(255,205,20,.45);
+      box-shadow:0 0 26px rgba(255,255,255,.65), inset 0 0 18px rgba(255,255,255,.2);
+      overflow:hidden;
+    }
+    .logo-box img{width:112%;height:112%;object-fit:cover;display:block}
+    h1{font-size:30px;color:#ef1515;font-weight:900;margin-bottom:12px;text-shadow:0 2px 0 rgba(255,255,255,.18)}
+    .subtitle{font-size:16px;font-weight:700;color:#5b4a1f;margin-bottom:14px;line-height:1.35}
+    .city{font-size:13px;color:#9b5228;margin-bottom:26px;font-weight:700}
+    .card{
+      width:100%;border-radius:12px;margin-bottom:18px;padding:22px 20px;
+      box-shadow:0 9px 18px rgba(124,82,0,.22);
+      text-align:left;
+    }
+    .whatsapp{
+      color:#fff;background:linear-gradient(135deg,#f10d0d 0%,#f0333e 55%,#ff4051 100%);
+    }
+    .white{background:#fff;color:#202020}
+    .row{display:flex;gap:12px;align-items:flex-start}
+    .icon{font-size:21px;min-width:24px;text-align:center}
+    .title{font-size:18px;font-weight:900;margin-bottom:6px}
+    .desc{font-size:14px;font-weight:600;opacity:.86;line-height:1.35}
+    a{text-decoration:none;color:inherit}
+    .center{text-align:center}
+    .phone,.email{font-size:19px;color:#c9342d;font-weight:900;margin-top:7px;word-break:break-word}
+    .socials{display:flex;justify-content:center;gap:20px;margin:18px 0 18px}
+    .social{
+      width:45px;height:45px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,#ff4a4a,#df1d1d);
+      color:#fff;font-size:21px;font-weight:900;
+      box-shadow:0 8px 16px rgba(220,0,0,.28);
+    }
+    .footer{
+      margin-top:26px;padding:26px 18px 34px;text-align:center;color:#fff;
+      background:linear-gradient(90deg,#f10d0d 0%,#ff3b16 35%,#ffc400 100%);
+      font-weight:700;
+    }
+    .footer strong{display:block;font-size:14px;margin-bottom:8px}.footer span{font-size:12px;opacity:.9}
+    @media(max-width:420px){.content{padding:28px 18px 0}.logo-box{width:136px;height:136px}h1{font-size:27px}.card{padding:20px 17px}}
   </style>
 </head>
 <body>
   <main class="page">
-    <div class="logo"><img src="logo.JPG" alt="Ceará Utilidades"></div>
-    <h1>Ceará Utilidades</h1>
-    <p class="slogan">Tudo o que você precisa em um só lugar! 🛍️</p>
-    <p class="city">📍 Goiânia - GO</p>
-    <a class="btn" href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank">
-      <strong>☏ WhatsApp</strong><span>Atendimento rápido e direto</span>
-    </a>
-    <section class="card"><h2>🏬 Nossa Loja Física</h2><p>Loja física em breve</p></section>
-    <section class="card center"><h2>☎ Contato</h2><p>Telefone/WhatsApp</p><p class="phone">(62) 98147-9674</p><br><p>Gmail</p><p class="email">ceara.utilidadespb@gmail.com</p></section>
-    <section class="card center"><h2>Redes Sociais</h2><div class="icons"><div class="icon">◎</div><div class="icon">f</div></div><p>Siga-nos para promoções exclusivas!</p></section>
-    <footer>© 2026 Ceará Utilidades<span>Todos os direitos reservados</span></footer>
+    <section class="content">
+      <div class="logo-box">
+        <img src="logo.jpg" alt="Logo Ceará Utilidades">
+      </div>
+
+      <h1>Ceará Utilidades</h1>
+      <p class="subtitle">Tudo o que você precisa em um só lugar! 🛍️</p>
+      <p class="city">📍 Goiânia - GO</p>
+
+      <a href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank" rel="noopener">
+        <div class="card whatsapp">
+          <div class="row">
+            <div class="icon">☏</div>
+            <div><div class="title">WhatsApp</div><div class="desc">Atendimento rápido e direto</div></div>
+          </div>
+        </div>
+      </a>
+
+      <div class="card white">
+        <div class="row">
+          <div class="icon">🏪</div>
+          <div><div class="title">Nossa Loja Física</div><div class="desc">Em breve em Goiânia</div></div>
+        </div>
+      </div>
+
+      <div class="card white center">
+        <div class="title">Contato</div>
+        <div class="desc">Telefone/WhatsApp</div>
+        <a href="https://wa.me/5562981479674" target="_blank" rel="noopener"><div class="phone">(62) 98147-9674</div></a>
+        <div class="desc" style="margin-top:15px">Gmail</div>
+        <a href="mailto:ceara.utilidadespb@gmail.com"><div class="email">ceara.utilidadespb@gmail.com</div></a>
+      </div>
+
+      <div class="card white center">
+        <div class="title">Redes Sociais</div>
+        <div class="socials">
+          <div class="social">◎</div>
+          <div class="social">f</div>
+        </div>
+        <div class="desc">Siga-nos para promoções exclusivas!</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <strong>© 2026 Ceará Utilidades</strong>
+      <span>Todos os direitos reservados</span>
+    </footer>
   </main>
 </body>
 </html>
