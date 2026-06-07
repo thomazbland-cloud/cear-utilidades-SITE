@@ -12,40 +12,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 
 body{
   min-height:100vh;
   background:#ffd400;
   display:flex;
   justify-content:center;
-  align-items:center;
-  padding:25px;
+  padding:32px 18px;
 }
 
-.container{
+.page{
   width:100%;
-  max-width:480px;
+  max-width:520px;
   text-align:center;
 }
 
 .logo-box{
-  width:175px;
-  height:175px;
+  width:178px;
+  height:178px;
   margin:0 auto 22px;
   border-radius:50%;
   background:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
   border:5px solid #fff;
-  box-shadow:0 15px 40px rgba(120,0,0,.28);
+  box-shadow:0 10px 35px rgba(150,0,0,.22);
+  overflow:hidden;
 }
 
 .logo-box img{
@@ -55,107 +46,157 @@ body{
 }
 
 h1{
-  color:#b80000;
-  font-size:35px;
+  color:#d60000;
+  font-size:36px;
   font-weight:800;
   margin-bottom:8px;
 }
 
 .subtitle{
-  color:#fff;
+  color:#333;
   font-size:16px;
-  font-weight:700;
-  margin-bottom:24px;
-  text-shadow:0 2px 8px rgba(120,0,0,.35);
-}
-
-.info{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-  font-size:15px;
-  font-weight:700;
+  font-weight:600;
   margin-bottom:10px;
-  color:#fff;
-  text-shadow:0 2px 7px rgba(100,0,0,.28);
 }
 
-.info i{
-  color:#b80000;
-  font-size:18px;
+.location{
+  color:#777;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:28px;
 }
 
-.info strong{
-  color:#b80000;
+.location i{
+  color:#d60000;
+  margin-right:6px;
 }
 
-.links{
-  margin-top:28px;
+.card{
+  background:#fff;
+  border-radius:22px;
+  padding:22px;
+  margin-bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  text-align:left;
+  box-shadow:0 10px 25px rgba(0,0,0,.13);
 }
 
-.link{
+.card-icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#fff2f2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.card-icon i{
+  color:#d60000;
+  font-size:20px;
+}
+
+.card h3{
+  color:#222;
+  font-size:19px;
+  font-weight:800;
+}
+
+.card p{
+  color:#666;
+  font-size:14px;
+  font-weight:500;
+}
+
+.card strong{
+  color:#d60000;
+}
+
+.whatsapp{
+  background:linear-gradient(135deg,#e60000,#ff3030);
+}
+
+.whatsapp a{
   width:100%;
-  height:64px;
-  border-radius:20px;
-  margin-bottom:15px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.whatsapp .card-icon{
+  background:rgba(255,255,255,.18);
+}
+
+.whatsapp i,
+.whatsapp h3,
+.whatsapp p{
+  color:#fff;
+}
+
+.social-card{
+  flex-direction:column;
+  text-align:center;
+}
+
+.social-icons{
   display:flex;
   justify-content:center;
+  gap:20px;
+}
+
+.social{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#fff;
+  display:flex;
   align-items:center;
-  gap:13px;
+  justify-content:center;
   text-decoration:none;
-  background:#b80000;
-  color:#fff;
-  font-size:17px;
-  font-weight:800;
-  border:2px solid rgba(255,255,255,.85);
-  box-shadow:0 12px 28px rgba(120,0,0,.28);
-  transition:.25s ease;
+  font-size:27px;
+  box-shadow:0 8px 20px rgba(0,0,0,.16);
+  transition:.25s;
 }
 
-.link:hover{
+.social:hover{
   transform:translateY(-3px);
-  background:#970000;
 }
 
-.link i{
-  font-size:23px;
-  color:#ffd400;
-}
+.instagram{color:#E1306C}
+.facebook{color:#1877F2}
 
 .footer{
-  margin-top:22px;
+  margin-top:32px;
+  background:linear-gradient(90deg,#e60000,#ff3030,#ffd400);
   color:#fff;
+  padding:24px 12px;
   font-size:13px;
-  font-weight:700;
-  text-shadow:0 2px 7px rgba(120,0,0,.35);
+  font-weight:600;
+  border-radius:0;
 }
 
-.footer span{
-  color:#b80000;
+.footer strong{
+  display:block;
+  font-size:15px;
+  margin-bottom:3px;
 }
 
 @media(max-width:480px){
-  .logo-box{
-    width:150px;
-    height:150px;
-  }
-
-  h1{
-    font-size:29px;
-  }
-
-  .link{
-    height:58px;
-    font-size:16px;
-  }
+  h1{font-size:31px}
+  .logo-box{width:150px;height:150px}
+  .card{padding:19px}
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
   <div class="logo-box">
     <img src="logo.jpg" alt="Ceará Utilidades">
@@ -163,51 +204,62 @@ h1{
 
   <h1>Ceará Utilidades</h1>
 
-  <p class="subtitle">
-    Tudo que você precisa em um só lugar.
+  <p class="subtitle">Tudo o que você precisa em um só lugar!</p>
+
+  <p class="location">
+    <i class="fa-solid fa-location-dot"></i>
+    Goiânia - GO
   </p>
 
-  <div class="info">
-    <i class="fa-solid fa-location-dot"></i>
-    <span><strong>Goiânia</strong> - GO</span>
+  <div class="card whatsapp">
+    <a href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank">
+      <div class="card-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div>
+        <h3>WhatsApp</h3>
+        <p>Atendimento rápido e direto</p>
+      </div>
+    </a>
   </div>
 
-  <div class="info">
-    <i class="fa-solid fa-store"></i>
-    <span>Loja física <strong>em breve</strong></span>
+  <div class="card">
+    <div class="card-icon">
+      <i class="fa-solid fa-store"></i>
+    </div>
+    <div>
+      <h3>Loja Física</h3>
+      <p><strong>Em breve</strong> em Goiânia - GO</p>
+    </div>
   </div>
 
-  <div class="info">
-    <i class="fa-solid fa-envelope"></i>
-    <span>ceara.utilidadespb@gmail.com</span>
-  </div>
-
-  <div class="links">
-
-    <a class="link" href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-      WhatsApp
-    </a>
-
-    <a class="link" href="#" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
-      Instagram
-    </a>
-
-    <a class="link" href="#" target="_blank">
-      <i class="fa-brands fa-facebook-f"></i>
-      Facebook
-    </a>
-
-    <a class="link" href="mailto:ceara.utilidadespb@gmail.com">
+  <div class="card">
+    <div class="card-icon">
       <i class="fa-solid fa-envelope"></i>
-      Gmail
-    </a>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p>ceara.utilidadespb@gmail.com</p>
+    </div>
+  </div>
 
+  <div class="card social-card">
+    <div class="social-icons">
+      <a href="#" class="social instagram" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#" class="social facebook" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+
+    <p>Siga-nos para promoções exclusivas!</p>
   </div>
 
   <div class="footer">
-    © <span>2026</span> Ceará Utilidades
+    <strong>© 2026 Ceará Utilidades</strong>
+    Todos os direitos reservados
   </div>
 
 </div>
