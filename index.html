@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ceará Utilidades</title>
 
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.png" type="image/png">
+<link rel="icon" type="image/png" href="favicon/favicon.png">
+<link rel="shortcut icon" type="image/png" href="favicon/favicon.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -21,14 +21,11 @@
 
 body{
   min-height:100vh;
-  background:
-    radial-gradient(circle at top, rgba(255,220,0,.35), transparent 34%),
-    linear-gradient(180deg,#ffd400 0%,#ffbf00 45%,#f01818 100%);
+  background:#ffd400;
   display:flex;
-  align-items:center;
   justify-content:center;
-  padding:28px;
-  color:#1b1b1b;
+  align-items:center;
+  padding:25px;
 }
 
 .container{
@@ -38,17 +35,17 @@ body{
 }
 
 .logo-box{
-  width:185px;
-  height:185px;
-  margin:0 auto 20px;
+  width:175px;
+  height:175px;
+  margin:0 auto 22px;
   border-radius:50%;
   background:#fff;
   display:flex;
-  align-items:center;
   justify-content:center;
-  box-shadow:0 18px 45px rgba(120,0,0,.30);
+  align-items:center;
   overflow:hidden;
-  border:5px solid rgba(255,255,255,.85);
+  box-shadow:0 12px 35px rgba(180,0,0,.25);
+  border:4px solid #c40000;
 }
 
 .logo-box img{
@@ -58,34 +55,33 @@ body{
 }
 
 h1{
+  color:#c40000;
   font-size:34px;
   font-weight:800;
-  color:#d90000;
   margin-bottom:8px;
-  text-shadow:0 2px 0 rgba(255,255,255,.45);
 }
 
 .subtitle{
+  color:#a00000;
   font-size:15px;
-  color:#3b2b00;
-  font-weight:500;
-  margin-bottom:22px;
+  font-weight:600;
+  margin-bottom:24px;
 }
 
 .info{
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   gap:10px;
-  color:#3a2500;
+  color:#c40000;
   font-size:15px;
-  font-weight:600;
-  margin-bottom:9px;
+  font-weight:700;
+  margin-bottom:10px;
 }
 
 .info i{
-  color:#d90000;
   font-size:18px;
+  color:#c40000;
 }
 
 .links{
@@ -94,60 +90,43 @@ h1{
 
 .link{
   width:100%;
-  height:64px;
-  border-radius:20px;
+  height:62px;
+  border-radius:18px;
   margin-bottom:15px;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   gap:13px;
   text-decoration:none;
-  color:#fff;
+  background:#c40000;
+  color:#ffd400;
   font-size:17px;
   font-weight:800;
-  background:linear-gradient(135deg,#e90000,#ff3131);
-  border:2px solid rgba(255,255,255,.45);
-  box-shadow:0 12px 28px rgba(120,0,0,.28);
+  border:2px solid #8b0000;
+  box-shadow:0 10px 25px rgba(140,0,0,.25);
   transition:.25s ease;
 }
 
 .link:hover{
   transform:translateY(-3px);
-  box-shadow:0 18px 35px rgba(100,0,0,.35);
+  background:#a80000;
 }
 
 .link i{
-  font-size:24px;
-}
-
-.whatsapp{
-  background:linear-gradient(135deg,#14b84a,#25D366);
-}
-
-.instagram{
-  background:linear-gradient(135deg,#ff0069,#ffb000);
-}
-
-.facebook{
-  background:linear-gradient(135deg,#005bea,#1877F2);
-}
-
-.gmail{
-  background:linear-gradient(135deg,#c40000,#ff2d2d);
+  font-size:23px;
 }
 
 .footer{
-  margin-top:24px;
+  margin-top:22px;
+  color:#c40000;
   font-size:13px;
-  font-weight:600;
-  color:#fff;
-  text-shadow:0 2px 8px rgba(0,0,0,.35);
+  font-weight:700;
 }
 
 @media(max-width:480px){
   .logo-box{
-    width:155px;
-    height:155px;
+    width:150px;
+    height:150px;
   }
 
   h1{
@@ -155,7 +134,7 @@ h1{
   }
 
   .link{
-    height:59px;
+    height:58px;
     font-size:16px;
   }
 }
@@ -193,22 +172,22 @@ h1{
 
   <div class="links">
 
-    <a class="link whatsapp" href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank">
+    <a class="link" href="https://wa.me/message/P2WGXAOBKQKNP1" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
       WhatsApp
     </a>
 
-    <a class="link instagram" href="#" target="_blank">
+    <a class="link" href="#" target="_blank">
       <i class="fa-brands fa-instagram"></i>
       Instagram
     </a>
 
-    <a class="link facebook" href="#" target="_blank">
+    <a class="link" href="#" target="_blank">
       <i class="fa-brands fa-facebook-f"></i>
       Facebook
     </a>
 
-    <a class="link gmail" href="mailto:ceara.utilidadespb@gmail.com">
+    <a class="link" href="mailto:ceara.utilidadespb@gmail.com">
       <i class="fa-solid fa-envelope"></i>
       Gmail
     </a>
