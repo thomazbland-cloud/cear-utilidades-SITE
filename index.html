@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ceará Utilidades</title>
 
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -19,13 +22,13 @@
 body{
   min-height:100vh;
   background:
-    radial-gradient(circle at top, rgba(255,196,0,.18), transparent 35%),
-    linear-gradient(135deg,#080808,#151515,#0b0b0b);
+    radial-gradient(circle at top, rgba(255,220,0,.35), transparent 34%),
+    linear-gradient(180deg,#ffd400 0%,#ffbf00 45%,#f01818 100%);
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:25px;
-  color:#fff;
+  padding:28px;
+  color:#1b1b1b;
 }
 
 .container{
@@ -35,17 +38,17 @@ body{
 }
 
 .logo-box{
-  width:190px;
-  height:190px;
-  margin:0 auto 18px;
+  width:185px;
+  height:185px;
+  margin:0 auto 20px;
   border-radius:50%;
-  background:rgba(255,255,255,.08);
+  background:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:0 20px 50px rgba(0,0,0,.45);
+  box-shadow:0 18px 45px rgba(120,0,0,.30);
   overflow:hidden;
+  border:5px solid rgba(255,255,255,.85);
 }
 
 .logo-box img{
@@ -57,13 +60,15 @@ body{
 h1{
   font-size:34px;
   font-weight:800;
+  color:#d90000;
   margin-bottom:8px;
-  letter-spacing:.5px;
+  text-shadow:0 2px 0 rgba(255,255,255,.45);
 }
 
 .subtitle{
   font-size:15px;
-  color:#d4d4d4;
+  color:#3b2b00;
+  font-weight:500;
   margin-bottom:22px;
 }
 
@@ -71,24 +76,25 @@ h1{
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:9px;
-  color:#f5f5f5;
+  gap:10px;
+  color:#3a2500;
   font-size:15px;
-  margin-bottom:10px;
+  font-weight:600;
+  margin-bottom:9px;
 }
 
 .info i{
-  color:#ffcc00;
-  font-size:17px;
+  color:#d90000;
+  font-size:18px;
 }
 
 .links{
-  margin-top:26px;
+  margin-top:28px;
 }
 
 .link{
   width:100%;
-  height:62px;
+  height:64px;
   border-radius:20px;
   margin-bottom:15px;
   display:flex;
@@ -98,38 +104,50 @@ h1{
   text-decoration:none;
   color:#fff;
   font-size:17px;
-  font-weight:700;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.14);
-  backdrop-filter:blur(18px);
-  box-shadow:0 12px 30px rgba(0,0,0,.25);
+  font-weight:800;
+  background:linear-gradient(135deg,#e90000,#ff3131);
+  border:2px solid rgba(255,255,255,.45);
+  box-shadow:0 12px 28px rgba(120,0,0,.28);
   transition:.25s ease;
 }
 
 .link:hover{
   transform:translateY(-3px);
-  background:rgba(255,255,255,.14);
+  box-shadow:0 18px 35px rgba(100,0,0,.35);
 }
 
 .link i{
-  font-size:23px;
+  font-size:24px;
 }
 
-.whatsapp i{color:#25D366;}
-.instagram i{color:#E1306C;}
-.facebook i{color:#1877F2;}
-.gmail i{color:#EA4335;}
+.whatsapp{
+  background:linear-gradient(135deg,#14b84a,#25D366);
+}
+
+.instagram{
+  background:linear-gradient(135deg,#ff0069,#ffb000);
+}
+
+.facebook{
+  background:linear-gradient(135deg,#005bea,#1877F2);
+}
+
+.gmail{
+  background:linear-gradient(135deg,#c40000,#ff2d2d);
+}
 
 .footer{
-  margin-top:22px;
+  margin-top:24px;
   font-size:13px;
-  color:#aaa;
+  font-weight:600;
+  color:#fff;
+  text-shadow:0 2px 8px rgba(0,0,0,.35);
 }
 
 @media(max-width:480px){
   .logo-box{
-    width:160px;
-    height:160px;
+    width:155px;
+    height:155px;
   }
 
   h1{
@@ -137,7 +155,7 @@ h1{
   }
 
   .link{
-    height:58px;
+    height:59px;
     font-size:16px;
   }
 }
@@ -155,7 +173,7 @@ h1{
   <h1>Ceará Utilidades</h1>
 
   <p class="subtitle">
-    Utilidades para casa, cozinha, organização e decoração.
+    Tudo que você precisa em um só lugar.
   </p>
 
   <div class="info">
